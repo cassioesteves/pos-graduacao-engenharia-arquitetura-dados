@@ -22,7 +22,7 @@ A estrutura do repositório será organizada da seguinte forma:
 - **Materiais**: Anotações, resumos e outros conteúdos teóricos.
 - **Projetos**: Projetos práticos que desenvolvi ao longo do curso.
 - **Exercícios**: Atividades e exercícios realizados durante as aulas.
-- **Módulos**: Organização dos conteúdos de cada módulo do curso.
+- **Módulos**: Organização dos conteúdos por módulo do curso.
 
 ## 🚀 Tecnologias e Ferramentas Estudadas
 
