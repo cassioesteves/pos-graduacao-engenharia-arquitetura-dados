@@ -14,8 +14,8 @@ A estrutura do repositório será organizada da seguinte forma:
 📂 Pós-graduação Engenharia e Arquitetura de Dados
 ├── 📁 Materiais
 ├── 📁 Projetos
-├── 📁 Exercícios
-├── 📁 Módulos
+├── 📁 Exercicios
+├── 📁 Modulos
 └── README.md
 ```
 
