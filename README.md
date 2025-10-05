@@ -1,19 +1,14 @@
 # Pós-graduação Engenharia e Arquitetura de Dados
 
-Bem-vindo(a) ao repositório da Pós-graduação em Engenharia e Arquitetura de Dados! Este repositório contém materiais, projetos, exercícios e informações relacionadas ao curso.
+Bem-vindo(a) ao meu repositório de estudos da **Pós-graduação em Engenharia e Arquitetura de Dados**! Aqui vou registrar minha jornada, aprendizados e projetos desenvolvidos ao longo do curso.
 
-## 📋 Descrição
+## 📋 Sobre este Repositório
 
-Este repositório é voltado para o armazenamento e organização de conteúdos do curso de pós-graduação em Engenharia e Arquitetura de Dados. Aqui você encontrará:
-
-- Materiais de estudo
-- Projetos práticos
-- Exercícios e atividades
-- Documentação e recursos adicionais
+Este repositório foi criado para organizar e compartilhar os materiais que eu estou estudando, os projetos que estou desenvolvendo e as atividades práticas realizadas durante o curso. É um espaço onde pretendo documentar minha evolução e os conhecimentos adquiridos.
 
 ## 🗂 Estrutura do Repositório
 
-A estrutura do repositório segue o seguinte formato:
+A estrutura do repositório será organizada da seguinte forma:
 
 ```
 📂 Pós-graduação Engenharia e Arquitetura de Dados
@@ -23,31 +18,23 @@ A estrutura do repositório segue o seguinte formato:
 └── README.md
 ```
 
-- **Materiais**: Documentos e slides das aulas.
-- **Projetos**: Projetos desenvolvidos ao longo do curso.
-- **Exercícios**: Atividades práticas.
+- **Materiais**: Anotações, resumos e outros conteúdos teóricos.
+- **Projetos**: Projetos práticos que desenvolvi ao longo do curso.
+- **Exercícios**: Atividades e exercícios realizados durante as aulas.
 
 ## 🚀 Objetivo
 
-Capacitar profissionais a projetar, implementar e gerenciar soluções de dados escaláveis, utilizando técnicas modernas de engenharia e arquitetura de dados.
+Registrar minha evolução e aprendizado na área de Engenharia e Arquitetura de Dados, além de consolidar o conhecimento adquirido por meio de projetos práticos e exercícios.
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Tecnologias e Ferramentas Estudadas
 
-- Python
-- SQL
-- Apache Kafka
-- Apache Spark
-- AWS / Azure / Google Cloud
-- Ferramentas de ETL e Modelagem de Dados
+Ao longo do curso, terei contato com diversas tecnologias e ferramentas, como:
 
-## 👩‍💻 Como Contribuir
+- **Linguagens de Programação**: Python, SQL
+- **Ferramentas de Dados**: Apache Kafka, Apache Spark
+- **Cloud Computing**: AWS, Azure, Google Cloud
+- **ETL e Modelagem de Dados**
 
-1. Faça um fork do repositório.
-2. Crie sua branch (`git checkout -b feature/nova-feature`).
-3. Commit suas alterações (`git commit -m 'Adiciona nova feature'`).
-4. Faça o push para a branch (`git push origin feature/nova-feature`).
-5. Abra um Pull Request.
+## 🌱 Minha Jornada
 
-## 📝 Licença
-
-Este projeto está licenciado sob a [Licença MIT](LICENSE).
+Este repositório será atualizado frequentemente com novos materiais e projetos. É o meu espaço para explorar, aprender e compartilhar o conhecimento adquirido ao longo do curso.
