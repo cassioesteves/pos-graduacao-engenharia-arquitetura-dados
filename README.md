@@ -15,25 +15,25 @@ A estrutura do repositório será organizada da seguinte forma:
 ├── 📁 Materiais
 ├── 📁 Projetos
 ├── 📁 Exercícios
+├── 📁 Módulos
 └── README.md
 ```
 
 - **Materiais**: Anotações, resumos e outros conteúdos teóricos.
 - **Projetos**: Projetos práticos que desenvolvi ao longo do curso.
 - **Exercícios**: Atividades e exercícios realizados durante as aulas.
+- **Módulos**: Organização dos conteúdos de cada módulo do curso.
 
-## 🚀 Objetivo
+## 🚀 Tecnologias e Ferramentas Estudadas
 
-Registrar minha evolução e aprendizado na área de Engenharia e Arquitetura de Dados, além de consolidar o conhecimento adquirido por meio de projetos práticos e exercícios.
+Durante o curso, irei explorar e estudar as seguintes tecnologias e áreas:
 
-## 🛠️ Tecnologias e Ferramentas Estudadas
-
-Ao longo do curso, terei contato com diversas tecnologias e ferramentas, como:
-
-- **Linguagens de Programação**: Python, SQL
-- **Ferramentas de Dados**: Apache Kafka, Apache Spark
-- **Cloud Computing**: AWS, Azure, Google Cloud
-- **ETL e Modelagem de Dados**
+1. **Inteligência Artificial (IA)**: Uso de IA para automação, detecção de padrões e geração de insights precisos.
+2. **Cloud Computing**: Práticas e ferramentas para computação em nuvem, garantindo escalabilidade e robustez.
+3. **Segurança de Dados**: Práticas avançadas para proteger a integridade e confidencialidade dos dados.
+4. **Governança de Dados**: Técnicas para gerenciar e manter a qualidade dos dados com foco em performance e confiabilidade.
+5. **Modelagem de Dados**: Design e estruturação de dados para processamento e análise eficiente.
+6. **Experiências Hands-on**: Bootcamps e desafios com foco na construção de soluções práticas e inovadoras.
 
 ## 🌱 Minha Jornada
 
