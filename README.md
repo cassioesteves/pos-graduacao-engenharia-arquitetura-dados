@@ -26,14 +26,38 @@ A estrutura do repositório será organizada da seguinte forma:
 
 ## 🚀 Tecnologias e Ferramentas Estudadas
 
-Durante o curso, irei explorar e estudar as seguintes tecnologias e áreas:
+Durante o curso, irei explorar as seguintes tecnologias e conceitos:
 
-1. **Inteligência Artificial (IA)**: Uso de IA para automação, detecção de padrões e geração de insights precisos.
-2. **Cloud Computing**: Práticas e ferramentas para computação em nuvem, garantindo escalabilidade e robustez.
-3. **Segurança de Dados**: Práticas avançadas para proteger a integridade e confidencialidade dos dados.
-4. **Governança de Dados**: Técnicas para gerenciar e manter a qualidade dos dados com foco em performance e confiabilidade.
-5. **Modelagem de Dados**: Design e estruturação de dados para processamento e análise eficiente.
-6. **Experiências Hands-on**: Bootcamps e desafios com foco na construção de soluções práticas e inovadoras.
+### **Linguagens e Ferramentas de Programação**
+- **Python**: Pandas, Numpy, Programação Orientada a Objetos.
+- **SQL**: DDL, DML, TCL, DCL, Procedures, Functions, Triggers, Views.
+
+### **Fundamentos de Dados**
+- Banco de Dados Relacional e Propriedades ACID.
+- Workloads OLTP e OLAP (Batch e Streaming).
+- Big Data, Data Lake, Data Lakehouse e Delta Lake.
+- ETL vs ELT e formatos de dados (JSON, Parquet, Avro).
+
+### **Engenharia de Dados**
+- **Arquiteturas de Dados**: Batch, Realtime, Lambda, Kappa e Orientada a Eventos.
+- **Pipelines de Dados**: Aquisição, Transformação e Ingestão.
+- Orquestração com Apache Airflow.
+- Monitoramento com Prometheus e Grafana.
+
+### **Computação Distribuída**
+- **Apache Hadoop**: HDFS, Hive, Pig, HBase, MapReduce, ZooKeeper.
+- **Apache Spark**: PySpark, Spark SQL, DataFrames, Machine Learning (ML), GraphX.
+- **Apache Kafka**: Tópicos, Replicação, Tolerância a Falhas.
+- **Apache Flink**: Processamento em Fluxo, Janelas, Padrões.
+
+### **Processamento de Dados**
+- Mineração de Dados e Técnicas de Análise.
+- Processamento em Tempo Real (Flink, Spark Streaming).
+- SQL para Stream Processing.
+
+### **DevOps e Containers**
+- Docker e Kubernetes.
+- Data Mesh e DataOps.
 
 ## 🌱 Minha Jornada
 
