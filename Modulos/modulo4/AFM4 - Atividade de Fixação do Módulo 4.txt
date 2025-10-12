@@ -1,0 +1,97 @@
+# AFM4 - Atividade de Fixação do Módulo 4
+
+## Questão 1
+
+**Qual é a principal diferença entre Segurança da Informação e Segurança Cibernética?**
+
+*Opções da pergunta 1:*
+- Segurança da Informação tem escopo mais amplo, incluindo dados físicos e digitais, enquanto Segurança Cibernética foca em ameaças no ambiente digital.
+- Segurança Cibernética é uma parte da Segurança da Informação focada em ameaças digitais.
+- Não há diferenças entre os dois conceitos; ambos tratam de proteger qualquer tipo de dado.
+- Segurança da Informação abrange apenas dados digitais, enquanto Segurança Cibernética inclui dados em papel.
+
+**Resposta Correta:** Segurança da Informação tem escopo mais amplo, incluindo dados físicos e digitais, enquanto Segurança Cibernética foca em ameaças no ambiente digital.
+
+**Justificativa:**
+- **Segurança da Informação:** É um conceito abrangente que visa proteger a confidencialidade, integridade e disponibilidade (tríade CIA) da informação, não importa onde ela esteja ou em que formato se apresente (digital, papel, na mente das pessoas, etc.). Envolve políticas, processos e controles.
+- **Segurança Cibernética (ou Cibersegurança):** É um subconjunto da Segurança da Informação. Ela se concentra especificamente na proteção de ativos digitais — como computadores, servidores, redes e dados — contra ataques maliciosos que se originam no ciberespaço.
+
+---
+
+## Questão 2
+
+**Qual das opções a seguir é verdadeira sobre as diferenças entre Segurança da Informação e Segurança Cibernética?**
+
+*Opções da pergunta 2:*
+- Ambas são idênticas em conceito e aplicação.
+- Segurança da Informação aplica-se exclusivamente a dados confidenciais, enquanto Segurança Cibernética é responsável por todos os dados.
+- Segurança Cibernética é mais abrangente, incluindo proteção física de informações.
+- Segurança da Informação é mais ampla, protegendo dados em qualquer formato, enquanto Segurança Cibernética é focada no ambiente digital.
+
+**Resposta Correta:** Segurança da Informação é mais ampla, protegendo dados em qualquer formato, enquanto Segurança Cibernética é focada no ambiente digital.
+
+---
+
+## Questão 3
+
+**Qual norma ISO é especificamente voltada para a proteção de dados pessoais e integrações com sistemas de privacidade?**
+
+*Opções da pergunta 3:*
+- ISO/IEC 27002.
+- ISO/IEC 27701.
+- ISO/IEC 31000.
+- ISO/IEC 27001.
+
+**Resposta Correta:** ISO/IEC 27701.
+
+**Justificativa:**
+- **ISO/IEC 27701:** É uma extensão da ISO 27001. Ela foi criada especificamente para fornecer os requisitos e diretrizes para um **Sistema de Gestão da Privacidade da Informação (SGPI)**. Seu principal objetivo é ajudar as organizações a gerenciar e proteger dados pessoais, alinhando-se a regulamentações como a GDPR e a LGPD.
+- **ISO/IEC 27001:** É a norma base para **Sistemas de Gestão da Segurança da Informação (SGSI)**, mas não é focada em privacidade. A 27701 se conecta a ela.
+- **ISO/IEC 27002:** Fornece um catálogo de controles e boas práticas para apoiar a implementação da ISO 27001.
+- **ISO/IEC 31000:** É a norma de diretrizes para a **Gestão de Riscos** em geral, não especificamente de privacidade ou segurança da informação.
+
+---
+
+## Questão 4
+
+**Qual das seguintes é uma função da Autoridade Nacional de Proteção de Dados (ANPD) segundo a LGPD?**
+
+*Opções da pergunta 4:*
+- Definir o prazo máximo de retenção de dados pessoais em empresas privadas.
+- Fiscalizar o cumprimento da LGPD e aplicar sanções administrativas em casos de não conformidade.
+- Criar legislações estaduais para proteção de dados pessoais.
+- Implementar sanções judiciais contra empresas que violam a LGPD.
+
+**Resposta Correta:** Fiscalizar o cumprimento da LGPD e aplicar sanções administrativas em casos de não conformidade.
+
+**Justificativa:**
+A **Autoridade Nacional de Proteção de Dados (ANPD)** é o órgão central do Brasil para a proteção de dados. Suas principais atribuições, conforme a Lei Geral de Proteção de Dados (LGPD), são:
+- **Zelar e fiscalizar:** Garantir que a lei seja cumprida em todo o território nacional.
+- **Regular:** Criar normas e procedimentos complementares à lei.
+- **Aplicar sanções administrativas:** Em caso de descumprimento da LGPD, a ANPD pode aplicar advertências, multas e outras penalidades.
+
+As outras opções estão incorretas porque:
+- A ANPD não define um prazo máximo universal de retenção de dados; isso depende da finalidade para a qual o dado foi coletado.
+- A ANPD não cria legislação estadual; a LGPD é uma lei federal.
+- A ANPD aplica sanções **administrativas**, não **judiciais**. Sanções judiciais são aplicadas pelo Poder Judiciário.
+
+---
+
+## Questão 5
+
+**De acordo com a LGPD, qual é o prazo para que o controlador informe à ANPD sobre uma violação de dados pessoais?**
+
+*Opções da pergunta 5:*
+- Em até 72 horas, obrigatoriamente, após a detecção do incidente
+- Em até 48 horas após a ocorrência do incidente.
+- Imediatamente após a detecção, sem exceções.
+- A LGPD não especifica prazo fixo, cabendo à ANPD definir as condições e prazos para a notificação.
+
+**Resposta Correta:** A LGPD não especifica prazo fixo, cabendo à ANPD definir as condições e prazos para a notificação.
+
+**Justificativa:**
+Ao contrário da GDPR (a lei de proteção de dados europeia), que fixa o prazo de 72 horas, a **Lei Geral de Proteção de Dados (LGPD)**, em seu Artigo 48, afirma que a comunicação do incidente deve ser feita em **"prazo razoável"**. O mesmo artigo delega à **ANPD** a responsabilidade de regulamentar e definir o que seria esse prazo e as condições para a notificação.
+
+**Nota:** Posteriormente, a ANPD publicou uma resolução que estabeleceu o prazo de **2 dias úteis** para a comunicação, mas a *lei em si* não traz um número fixo, apenas a delegação da competência. Como a pergunta é sobre a LGPD, a resposta correta é a que reflete o texto da lei.
+
+---
