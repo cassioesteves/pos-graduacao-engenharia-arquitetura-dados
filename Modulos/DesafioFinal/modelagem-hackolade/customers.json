@@ -1,0 +1,18 @@
+{
+  "_id": "ObjectId",
+  "customer_id": "string",
+  "name": "string",
+  "email": "string",
+  "phone": "string",
+  "address": {
+    "street": "string",
+    "city": "string",
+    "state": "string",
+    "zip_code": "string"
+  },
+  "registration_date": "date",
+  "preferences": [
+    "string"
+  ],
+  "status": "string"
+}

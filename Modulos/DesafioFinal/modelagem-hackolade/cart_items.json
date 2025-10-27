@@ -1,0 +1,15 @@
+{
+  "_id": "ObjectId",
+  "cart_id": "string",
+  "customer_id": "string",
+  "product_id": "string",
+  "product_info": {
+    "name": "string",
+    "price": "number",
+    "image_url": "string"
+  },
+  "quantity": "number",
+  "unit_price": "number",
+  "total_price": "number",
+  "added_at": "date"
+}
