@@ -63,66 +63,9 @@ O particionamento dos dados (sharding) é crucial para a escalabilidade. A estra
 
 ### 3.1 Diagrama do Modelo Lógico
 
-O diagrama a seguir representa o modelo lógico consolidado das coleções no banco de dados, destacando os campos principais e a natureza dos relacionamentos (via referência ou dados embutidos).
+Este diagrama representa o modelo relacional do banco de dados AMAZONAS_DB, utilizado para um sistema de e-commerce. Ele inclui as tabelas principais:  `customers `,  `products `,  `orders `,  `order_items `,  `cart_items ` e  `product_reviews ` e os relacionamentos entre elas, mostrando como os clientes interagem com produtos, realizam pedidos, adicionam itens ao carrinho e escrevem avaliações. O diagrama foi criado no dbdiagram.io.
 
-```
-+----------------------------------+
-|      customers (Clientes)        |
-|----------------------------------|
-| _id: ObjectId                    |
-| customer_id: String              |
-| name: String                     |
-| email: String                    |
-| address: Object (Embutido)       |
-| ...                              |
-+----------------------------------+
-
-+----------------------------------+
-|        products (Produtos)       |
-|----------------------------------|
-| _id: ObjectId                    |
-| product_id: String               |
-| name: String                     |
-| price: Number                    |
-| category: String                 |
-| attributes: Object (Embutido)    |
-| ...                              |
-+----------------------------------+
-
-+----------------------------------+
-|         orders (Pedidos)         |
-|----------------------------------|
-| _id: ObjectId                    |
-| order_id: String                 |
-| customer_id: String (Ref)        |
-| customer_info: Object (Embutido) |
-| items: Array (Embutido)          |
-| total: Number                    |
-| ...                              |
-+----------------------------------+
-
-+----------------------------------+
-|      cart_items (Carrinho)       |
-|----------------------------------|
-| _id: ObjectId                    |
-| customer_id: String (Ref)        |
-| product_id: String (Ref)         |
-| product_info: Object (Embutido)  |
-| quantity: Number                 |
-| ...                              |
-+----------------------------------+
-
-+----------------------------------+
-|  product_reviews (Avaliações)    |
-|----------------------------------|
-| _id: ObjectId                    |
-| product_id: String (Ref)         |
-| customer_id: String (Ref)        |
-| customer_name: String (Embutido) |
-| rating: Number                   |
-| ...                              |
-+----------------------------------+
-```
+![Diagrama do Modelo Relacional](../Diagrama/DiagramaModeloRelacional.svg)
 
 ### 3.2 Visão Geral das Coleções
 

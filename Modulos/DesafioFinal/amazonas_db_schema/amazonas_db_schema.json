@@ -1,0 +1,198 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/schemas/amazonas_db_schema.json",
+  "title": "amazonas_db - JSON Schema (modelo para Hackolade)",
+  "type": "object",
+  "definitions": {
+    "customers": {
+      "title": "customers",
+      "type": "object",
+      "properties": {
+        "customer_id": { "type": "string" },
+        "name": { "type": "string" },
+        "email": { "type": "string", "format": "email" },
+        "phone": { "type": "string" },
+        "address": {
+          "type": "object",
+          "properties": {
+            "street": { "type": "string" },
+            "city": { "type": "string" },
+            "state": { "type": "string" },
+            "zip_code": { "type": "string" }
+          }
+        },
+        "registration_date": { "type": "string", "format": "date-time" },
+        "preferences": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "status": { "type": "string" }
+      },
+      "required": ["customer_id", "name", "email"],
+      "additionalProperties": true
+    },
+
+    "products": {
+      "title": "products",
+      "type": "object",
+      "properties": {
+        "product_id": { "type": "string" },
+        "name": { "type": "string" },
+        "description": { "type": "string" },
+        "price": { "type": "number" },
+        "category": { "type": "string" },
+        "brand": { "type": "string" },
+        "stock_quantity": { "type": "integer" },
+        "attributes": { "type": "object", "additionalProperties": true },
+        "image_url": { "type": "string", "format": "uri" },
+        "created_at": { "type": "string", "format": "date-time" }
+      },
+      "required": ["product_id", "name", "price"],
+      "additionalProperties": true
+    },
+
+    "orders": {
+      "title": "orders",
+      "type": "object",
+      "properties": {
+        "order_id": { "type": "string" },
+        "customer_id": { "type": "string" },
+        "customer_info": {
+          "type": "object",
+          "properties": {
+            "name": { "type": "string" },
+            "email": { "type": "string", "format": "email" }
+          }
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "product_id": { "type": "string" },
+              "name": { "type": "string" },
+              "quantity": { "type": "integer" },
+              "unit_price": { "type": "number" },
+              "total": { "type": "number" }
+            },
+            "required": ["product_id", "quantity", "unit_price"]
+          }
+        },
+        "subtotal": { "type": "number" },
+        "shipping_cost": { "type": "number" },
+        "total": { "type": "number" },
+        "status": { "type": "string" },
+        "order_date": { "type": "string", "format": "date-time" },
+        "shipping_address": {
+          "type": "object",
+          "properties": {
+            "street": { "type": "string" },
+            "city": { "type": "string" },
+            "state": { "type": "string" },
+            "zip_code": { "type": "string" }
+          }
+        },
+        "payment_status": { "type": "string" }
+      },
+      "required": ["order_id", "customer_id", "items", "order_date"],
+      "additionalProperties": true
+    },
+
+    "cart_items": {
+      "title": "cart_items",
+      "type": "object",
+      "properties": {
+        "cart_id": { "type": "string" },
+        "customer_id": { "type": "string" },
+        "product_id": { "type": "string" },
+        "product_info": {
+          "type": "object",
+          "properties": {
+            "name": { "type": "string" },
+            "price": { "type": "number" },
+            "image_url": { "type": "string", "format": "uri" }
+          }
+        },
+        "quantity": { "type": "integer" },
+        "unit_price": { "type": "number" },
+        "total_price": { "type": "number" },
+        "added_at": { "type": "string", "format": "date-time" }
+      },
+      "required": ["cart_id", "customer_id", "product_id", "quantity"],
+      "additionalProperties": true
+    },
+
+    "product_reviews": {
+      "title": "product_reviews",
+      "type": "object",
+      "properties": {
+        "review_id": { "type": "string" },
+        "product_id": { "type": "string" },
+        "customer_id": { "type": "string" },
+        "customer_name": { "type": "string" },
+        "rating": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "comment": { "type": "string" },
+        "review_date": { "type": "string", "format": "date-time" },
+        "helpful_count": { "type": "integer" },
+        "verified_purchase": { "type": "boolean" }
+      },
+      "required": ["review_id", "product_id", "customer_id", "rating"],
+      "additionalProperties": true
+    }
+  },
+
+  "properties": {
+    "customers": { "$ref": "#/definitions/customers" },
+    "products": { "$ref": "#/definitions/products" },
+    "orders": { "$ref": "#/definitions/orders" },
+    "cart_items": { "$ref": "#/definitions/cart_items" },
+    "product_reviews": { "$ref": "#/definitions/product_reviews" }
+  },
+
+  "additionalProperties": false,
+
+  "x-relations": [
+    {
+      "name": "customers_orders",
+      "from": "customers.customer_id",
+      "to": "orders.customer_id",
+      "type": "1:N",
+      "description": "Um customer (1) pode ter vários orders (N)."
+    },
+    {
+      "name": "orders_products_via_items",
+      "from": "orders.items.product_id",
+      "to": "products.product_id",
+      "type": "N:M",
+      "description": "Order contém vários products e cada product pode aparecer em vários orders (N:M)."
+    },
+    {
+      "name": "customers_cartitems",
+      "from": "customers.customer_id",
+      "to": "cart_items.customer_id",
+      "type": "1:N",
+      "description": "Um customer (1) pode ter vários cart_items (N)."
+    },
+    {
+      "name": "cartitems_products",
+      "from": "cart_items.product_id",
+      "to": "products.product_id",
+      "type": "N:1",
+      "description": "Vários cart_items podem referenciar o mesmo product (N:1)."
+    },
+    {
+      "name": "customers_productreviews",
+      "from": "customers.customer_id",
+      "to": "product_reviews.customer_id",
+      "type": "1:N",
+      "description": "Um customer (1) pode escrever várias product_reviews (N)."
+    },
+    {
+      "name": "productreviews_products",
+      "from": "product_reviews.product_id",
+      "to": "products.product_id",
+      "type": "N:1",
+      "description": "Várias product_reviews podem referenciar o mesmo product (N:1)."
+    }
+  ]
+}
