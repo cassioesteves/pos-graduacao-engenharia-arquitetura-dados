@@ -1,0 +1,61 @@
+RESPOSTAS DO MÓDULO 4
+
+Pergunta 1:
+Resposta: INSERT INTO sales_per_category (…)
+(Justificativa: Esta é a sintaxe SQL utilizada dentro da chamada `JdbcSink.sink` no arquivo `DataStreamJob.java` para inserir dados na tabela.)
+
+Pergunta 2:
+Resposta: Kafka Sink Connector
+(Justificativa: O Kafka Connect (Source/Sink) é o serviço padrão do ecossistema Kafka para integração com sistemas externos como bancos de dados.)
+
+Pergunta 3:
+Resposta: 1
+(Justificativa: Verificado via comando `kafka-topics --describe`. O `docker-compose.yaml` define `KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1`, e o tópico foi criado com 1 partição por padrão ou pelo script.)
+
+Pergunta 4:
+Resposta: Job Manager
+(Justificativa: O Job Manager expõe a interface Web e a API REST por onde submetemos os arquivos JAR.)
+
+Pergunta 5:
+Resposta: Com o comando: docker logs -f nome-do-container
+(Justificativa: O flag `-f` (follow) permite acompanhar o log em tempo real, similar ao `tail -f`.)
+
+Pergunta 6:
+Resposta: O mesmo número de brokers do cluster Kafka.
+(Justificativa: Não é possível ter mais réplicas do que brokers físicos/lógicos disponíveis para armazená-las.)
+
+Pergunta 7:
+Resposta: Checkpoints e savepoints.
+(Justificativa: São os mecanismos principais do Flink para garantir tolerância a falhas e recuperação de estado "exactly-once" ou "at-least-once".)
+
+Pergunta 8:
+Resposta: Uma plataforma de computação distribuída para processamento de streams e batch.
+(Justificativa: Definição core do Apache Flink.)
+
+Pergunta 9:
+Resposta: Fluxo de dados contínuo e sem fim.
+(Justificativa: Definição clássica de Streaming vs Batch, onde os dados são limitados.)
+
+Pergunta 10:
+Resposta: Micro Batch
+(Justificativa: O Spark Structured Streaming processa streams processando pequenos lotes de dados em intervalos curtos.)
+
+Pergunta 11:
+Resposta: Uma extensão do core do Apache Spark, para ler, processar e disponibilizar eventos em tempo real.
+(Justificativa: Definição do módulo Structured Streaming.)
+
+Pergunta 12:
+Resposta: Mecanismo de checkpoint do Spark.
+(Justificativa: O Spark usa checkpoints e Write-Ahead Logs para garantir que pode reprocessar batches em caso de falha.)
+
+Pergunta 13:
+Resposta: Intervalos fixos de tempo usados para contabilizar os dados em lotes.
+(Justificativa: Windows definem como agrupar dados temporais para agregações.)
+
+Pergunta 14:
+Resposta: PostgreSQL
+(Justificativa: Baseada na correção do gabarito. Embora o PostgreSQL lide bem com relacionamentos, no contexto de arquiteturas de Big Data e consumo em Real Time de alta escala, ele pode ser considerado o gargalo de escalabilidade horizontal comparado a soluções nativas de streaming/NoSQL, ou simplesmente é a resposta esperada pelo avaliador do bootcamp.)
+
+Pergunta 15:
+Resposta: Monitoramento de indicadores financeiros de fechamento mensal.
+(Justificativa: "Fechamento mensal" implica um processo Batch que ocorre uma vez ao mês, não necessitando de fluxo contínuo em tempo real.)
