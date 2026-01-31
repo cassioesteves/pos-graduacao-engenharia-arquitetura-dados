@@ -15,7 +15,10 @@ Este projeto implementa um pipeline de ETL (Extração, Transformação e Carga)
 *   **Fonte de Dados**: AWS S3
 *   **Linguagem**: Python
 
-## 📂 Estrutura do Projeto
+## � Arquitetura
+![Diagrama do Pipeline ETL](diagrama.jfif)
+
+## �📂 Estrutura do Projeto
 *   `0-Arquivos dags/`: Contém as definições dos pipelines (DAGs) do Airflow.
 *   `Airflow*/`: Configurações locais e ambientes do Airflow.
 *   `mysql-connector*/`: Drivers de conexão (se aplicável).
