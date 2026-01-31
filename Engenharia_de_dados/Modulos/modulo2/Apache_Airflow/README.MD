@@ -1,0 +1,4 @@
+Dando mais um passo nos meus estudos de engenharia de dados com a implementação de um pipeline ETL ponta a ponta.
+Stack utilizada no projeto: 🔹 Fonte de Dados: AWS S3🔹 Orquestração: Apache Airflow 🔹 Ambiente: Docker 🔹 Banco de Dados: PostgreSQL
+O fluxo automatiza a ingestão de dados do S3 para o Postgres, criando uma base sólida para projetos futuros de transformação e análise. Uma ótima experiência para solidificar conceitos de orquestração, conteinerização e arquitetura de dados.
+hashtag#DataEngineering hashtag#ETL hashtag#ApacheAirflow hashtag#Docker hashtag#PostgreSQL hashtag#AWSS3 hashtag#DataArchitecture
