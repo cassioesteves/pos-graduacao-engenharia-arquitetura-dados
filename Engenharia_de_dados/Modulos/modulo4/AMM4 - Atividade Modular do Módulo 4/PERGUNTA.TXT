@@ -1,0 +1,165 @@
+Pergunta 1 (4 pontos) 
+Quando definimos um Sink, qual comando utilizamos para inserir na tabela de vendas (sales_per_category)?
+Opções da pergunta 1:
+
+Sink.InsertData(...)
+
+UPDATE DATA sales_per_category (…)
+
+INSERT IF NOT PRESENT sales_per_category (…)
+
+INSERT INTO sales_per_category (…)
+Pergunta 2 (4 pontos) 
+Qual serviço Kafka pode ser utilizado para se conectar a uma base de dados?
+Opções da pergunta 2:
+
+Kafka Topic
+
+Kafka Topic
+
+Zookeeper
+
+Kafka Sink Connector
+Pergunta 3 (4 pontos) 
+Após a execução da prática, quantas partições foram criadas no Kafka?
+Opções da pergunta 3:
+
+Nenhuma
+
+1
+
+2
+
+3
+Pergunta 4 (4 pontos) 
+Qual dos módulos do Apache Flink é utilizado para fazer upload do JAR contendo os Jobs a serem executados?
+Opções da pergunta 4:
+
+Job Manager
+
+Connect
+
+KSQL DB
+
+Task Manager
+Pergunta 5 (4 pontos) 
+Como é possível, analisar em tempo real, um log de um container Docker em execução?
+Opções da pergunta 5:
+
+Com o comando: docker ps -a nome-do-container
+
+Com o comando: docker logs -f nome-do-container
+
+Com o comando: docker images -logs nome-do-container
+
+Com o comando: docker logs -server nome-do-container
+Pergunta 6 (4 pontos) 
+Qual é o número máximo de fator de replicação que um tópico pode ter?
+Opções da pergunta 6:
+
+O mesmo número de brokers do cluster Kafka.
+
+Infinito.
+
+Metade do número de brokers do cluster Kafka.
+
+O dobro do número de brokers do cluster Kafka.
+Pergunta 7 (4 pontos) 
+Qual característica do Apache Flink permite a recuperação de falhas de estado?
+Opções da pergunta 7:
+
+Tolerância a falhas através de reexecução de queries.
+
+Mecanismo de replicação de dados.
+
+Checkpoints e savepoints.
+
+Logs de transações distribuídas.
+Pergunta 8 (4 pontos) 
+O que é Apache Flink?
+Opções da pergunta 8:
+
+Um banco de dados SQL distribuído.
+
+Uma plataforma de computação distribuída para processamento de streams e batch.
+
+Uma ferramenta de orquestração de workflows.
+
+Um sistema de gerenciamento de containers.
+Pergunta 9 (4 pontos) 
+Qual das frases abaixo melhor define um streaming de dados?
+Opções da pergunta 9:
+
+Fluxos de dados extraídos de bases relacionais.
+
+Fluxos de ingestão de dados agendados para execução em horários específicos.
+
+Fluxo de dados contínuo e sem fim.
+
+Fluxos criados em ferramentas de orquestração, como o Apache Airflow.
+Pergunta 10 (4 pontos) 
+No contexto do Apache Spark Structured Streaming, qual é o modo de envio dos fluxos de dados, similares aos eventos, mas que agrupam pequenos lotes de dados antes do envio?
+Opções da pergunta 10:
+
+Streaming e processamento de cada evento isoladamente
+
+Batch integral de tópicos Kafka lidos de uma só vez
+
+Micro Batch
+
+Nano Batch
+Pergunta 11 (4 pontos) 
+Qual das frases abaixo melhor define o Spark Structured Streaming?
+Opções da pergunta 11:
+
+Nenhuma das alternativas.
+
+Uma extensão do core do Apache Spark, para ler, processar e disponibilizar eventos em tempo real.
+
+Capacidade de criar tópicos no Kafka.
+
+Capacidade de ler e disponibilizar eventos em tempo real.
+Pergunta 12 (4 pontos) 
+Qual é o mecanismo subjacente no Spark Structured Streaming que garante a tolerância a falhas e a entrega exatamente uma vez (exactly-once processing) durante o processamento de fluxos de dados?
+Opções da pergunta 12:
+
+Sistema de arquivos distribuído HDFS.
+
+Uso exclusivo de processamento em lote.
+
+Mecanismo de checkpoint do Spark.
+
+Integração com bancos de dados externos.
+Pergunta 13 (4 pontos) 
+No contexto do Spark Structured Streaming, o que são "janelas de tempo" (time windows)?
+Opções da pergunta 13:
+
+Padrões de design para estruturar consultas complexas em SQL.
+
+Janelas do sistema operacional usadas para melhorar o desempenho.
+
+Momentos em que ocorrem os checkpoints para garantir a tolerância a falhas.
+
+Intervalos fixos de tempo usados para contabilizar os dados em lotes.
+Pergunta 14 (4 pontos) 
+Qual das opções abaixo é a MENOS indicada para camada de consumo de dados em Real Time? (pense em consultas que tenham muitos relacionamentos)
+Opções da pergunta 14:
+
+Elastic Search
+
+Pinot
+
+DynamoDB
+
+PostgreSQL
+Pergunta 15 (4 pontos) 
+Qual dos casos abaixo NÃO é um bom case a ser tratado com uma arquitetura de fluxo contínuo de dados?
+Opções da pergunta 15:
+
+Publicação de post em mídia social (Instagram, Twitter etc.)
+
+Transações de cartão de crédito.
+
+Monitoramento de indicadores financeiros de fechamento mensal.
+
+Verificação de indicadores de saúde no CTI.

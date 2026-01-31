@@ -1,0 +1,63 @@
+Pergunta 1 (5 pontos)
+O termo “ingestão de dados” se tornou muito popular. Qual das seguintes opções melhor define o processo de ingestão de dados em um ambiente de processamento de dados?
+
+Opções:
+A) O processo de mover dados de uma ou mais fontes para um sistema de armazenamento ou processamento
+B) A exclusão de dados redundantes ou desatualizados de um banco de dados
+C) A criptografia de dados para garantir segurança durante o transporte
+D) A criação de relatórios a partir de dados armazenados
+
+**Resposta Correta: A) O processo de mover dados de uma ou mais fontes para um sistema de armazenamento ou processamento.**
+**Justificativa:** Ingestão de dados é a primeira etapa de um pipeline, focada em trazer dados de suas fontes para um repositório central para armazenamento ou processamento.
+
+
+Pergunta 2 (5 pontos)
+Qual das opções a seguir melhor descreve os termos Data Wrangling e Data Scraping?
+
+Opções:
+A) Data Wrangling é o processo de coletar dados da web, enquanto Data Scraping envolve a limpeza e transformação dos dados coletados
+B) Data Wrangling é o processo de extração de dados de fontes públicas, enquanto Data Scraping é usado apenas para dados privados
+C) Data Wrangling envolve o processo de limpar, transformar e organizar dados para análise, enquanto Data Scraping refere-se à extração automatizada de dados de fontes, geralmente de páginas da web.
+D) Data Scraping refere-se ao processo de coletar dados de fontes estruturadas como bancos de dados, enquanto Data Wrangling coleta dados de fontes não estruturadas como websites
+
+**Resposta Correta: C) Data Wrangling envolve o processo de limpar, transformar e organizar dados para análise, enquanto Data Scraping refere-se à extração automatizada de dados de fontes, geralmente de páginas da web.**
+**Justificativa:** Data Scraping é a extração/coleta de dados brutos (geralmente da web). Data Wrangling é a limpeza, transformação e organização desses dados brutos para torná-los úteis para análise.
+
+
+Pergunta 3 (5 pontos)
+Por que o processo de ETL evoluiu para o ELT em arquiteturas de dados modernas?
+
+Opções:
+A) Porque o ELT é mais rápido e mais barato para todas as implementações, independentemente do volume de dados e infraestrutura utilizada
+B) Porque o ELT permite que os dados sejam transformados em tempo real antes de serem carregados no sistema de destino
+C) Porque os sistemas de armazenamento e processamento modernos oferecem poder de processamento suficiente para realizar transformações diretamente após o carregamento dos dados brutos.
+D) Porque o ELT elimina a necessidade de extrair dados de diferentes fontes, concentrando tudo em um único sistema
+
+**Resposta Correta: C) Porque os sistemas de armazenamento e processamento modernos oferecem poder de processamento suficiente para realizar transformações diretamente após o carregamento dos dados brutos.**
+**Justificativa:** A evolução para ELT foi impulsionada por plataformas de nuvem (BigQuery, Snowflake, etc.) que possuem poder de computação massivo. É mais eficiente carregar os dados brutos (L) e usar o poder do destino para transformar (T), ao contrário do ETL, que transformava antes para não sobrecarregar destinos mais fracos.
+
+
+Pergunta 4 (5 pontos)
+Em quais cenários o processo de ELT é preferível em comparação ao ETL?
+
+Opções:
+A) Quando os sistemas de destino têm alta capacidade de armazenamento e processamento, permitindo transformações eficientes após o carregamento dos dados brutos
+B) Quando os dados são altamente estruturados e precisam de transformações simples e rápidas antes de serem analisados
+C) Quando há uma necessidade de processamento de dados em tempo real, e as transformações devem ocorrer antes do carregamento
+D) Quando os dados precisam ser transformados antes de serem carregados no sistema de destino, para evitar sobrecarga no processamento
+
+**Resposta Correta: A) Quando os sistemas de destino têm alta capacidade de armazenamento e processamento, permitindo transformações eficientes após o carregamento dos dados brutos.**
+**Justificativa:** O ELT é preferível exatamente neste cenário. Ele é projetado para aproveitar a alta capacidade de processamento dos Data Warehouses e Data Lakes modernos, tornando a transformação pós-carregamento eficiente e escalável, especialmente para Big Data.
+
+
+Pergunta 5 (5 pontos)
+Qual dos métodos abaixo não se refere a um método de Coleta de Dados?
+
+Opções:
+A) Questionários de múltipla escolha
+B) Entrevistas estruturadas
+C) Entrevistas abertas e não estruturadas
+D) Análise de dados
+
+**Resposta Correta: D) Análise de dados.**
+**Justificativa:** Coleta de dados é o ato de obter a informação (ex: questionários, entrevistas). Análise de dados é a etapa seguinte, que consiste em processar e interpretar os dados já coletados para extrair insights.

@@ -1,0 +1,15 @@
+No moderno processamento de dados, temos duas abordagens que se destacam:
+
+1) O Processamento de Eventos
+
+2) O Processamento de Micro-batchs.
+
+Dando um pouco mais de contexto:
+
+O processamento de eventos trata cada dado de forma individual assim que ele é gerado, garantindo latência extremamente baixa. Essa abordagem é essencial para sistemas que precisam de respostas em tempo real, como monitoramento de fraudes, IoT e notificações instantâneas. Tecnologias como Apache Kafka, Apache Flink e AWS Kinesis permitem esse tipo de processamento, assegurando escalabilidade e tolerância a falhas. Diferente do processamento em lote, o processamento de eventos não espera um intervalo fixo para executar as operações, sendo ideal para cenários que exigem decisões imediatas.
+
+Já o micro-batch é uma abordagem intermediária entre o batch tradicional e o streaming de eventos. Ele processa os dados em pequenos lotes, com intervalos curtos e regulares, garantindo um equilíbrio entre baixa latência e eficiência computacional. Frameworks como Apache Spark Structured Streaming utilizam essa técnica para fornecer um fluxo contínuo de dados, mas com a confiabilidade do processamento em lote. O micro-batch é ideal para casos em que alguns segundos de latência são aceitáveis, como análise de logs, ETLs contínuos e integração de dados em pipelines modernos.
+
+Claro, a escolha entre micro-batch e processamento de eventos depende dos requisitos específicos do sistema em questão.
+
+Na sua opinião: porque utilizar micro-batch ou processamento de eventos em um tratamento de fluxo contínuo de dados? Quais seriam as vantagens e desvantagens de cada abordagem?
