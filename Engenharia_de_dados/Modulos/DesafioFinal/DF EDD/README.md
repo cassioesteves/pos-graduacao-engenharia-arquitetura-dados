@@ -1,6 +1,10 @@
 # 🚀 Desafio Final - Engenharia de Dados (Bootcamp)
 
-Este repositório contém a resolução do Desafio Final do Bootcamp de Engenharia de Dados. O projeto consiste na construção de um **Data Lakehouse** completo, desde a ingestão de dados financeiros (Tesouro Direto) até a análise final, utilizando uma arquitetura moderna baseada em **Spark, Kafka e S3**.
+Este repositório contém a resolução do Desafio Final do Bootcamp de Engenharia de Dados.
+
+O tema do **Desafio Final** é a construção de Pipelines ETL com integração do **Apache Kafka** com um banco de dados **PostgreSQL** usando **Kafka Connect**, e entrega em Data Lake. Todos os serviços que compõem o Kafka e o database PostgreSQL (que servirá de fonte) serão implantados com **Docker Compose**.
+
+Portanto, desenvolvemos uma solução prática de Engenharia de Dados que implementa a criação de pipelines ETL utilizando o modelo **Bronze, Silver e Gold**, processados com **Apache Spark SQL API** e integrados a um Data Lake no Amazon S3 via Kafka Connect.
 
 ## 🏗️ Arquitetura do Projeto
 
