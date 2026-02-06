@@ -68,3 +68,7 @@ AFM*.txt
 Atividade Modular*.txt
 Atividade Modular*.pdf
 
+
+# Temporary Office Files
+~$*
+*.tmp

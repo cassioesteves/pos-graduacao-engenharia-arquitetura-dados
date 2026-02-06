@@ -1,0 +1,26 @@
+# Sensitive Credentials
+.env
+.env_kafka_connect
+kafka-spark-cesteves_accessKeys.csv
+
+# Large Binary Files
+*.jar
+*.rar
+*.zip
+
+# IDE & OS Files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# Spark & Hadoop Data/Logs
+spark-warehouse/
+metastore_db/
+derby.log
+hadoop/
+postgres/
+spark/
