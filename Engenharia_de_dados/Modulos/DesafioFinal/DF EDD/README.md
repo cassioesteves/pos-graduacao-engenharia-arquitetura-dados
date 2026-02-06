@@ -12,13 +12,13 @@ O pipeline de dados foi desenhado para simular um ambiente produtivo robusto, ga
 
 ```mermaid
 graph LR
-    API[API Tesouro Direto] -->|Python| PG[(PostgreSQL)]
-    PG -->|CDC (JDBC Source)| Kafka[Apache Kafka]
-    Kafka -->|S3 Sink Connector| S3_Bronze[(S3 - Bronze Layer)]
-    S3_Bronze -->|Apache Spark| Spark[Processamento ETL]
-    Spark -->|Limpeza| S3_Silver[(S3 - Silver Layer)]
-    Spark -->|Agregação| S3_Gold[(S3 - Gold Layer)]
-    S3_Gold -->|Spark SQL| Analytics[Análise de Dados]
+    API["API Tesouro Direto"] -->|Python| PG[("PostgreSQL")]
+    PG -->|"CDC (JDBC Source)"| Kafka["Apache Kafka"]
+    Kafka -->|"S3 Sink Connector"| S3_Bronze[("S3 - Bronze Layer")]
+    S3_Bronze -->|"Apache Spark"| Spark["Processamento ETL"]
+    Spark -->|Limpeza| S3_Silver[("S3 - Silver Layer")]
+    Spark -->|Agregação| S3_Gold[("S3 - Gold Layer")]
+    S3_Gold -->|"Spark SQL"| Analytics["Análise de Dados"]
 ```
 
 ## 🛠️ Tecnologias Utilizadas
