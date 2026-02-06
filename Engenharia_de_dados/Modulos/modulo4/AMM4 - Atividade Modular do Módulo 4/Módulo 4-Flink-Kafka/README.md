@@ -84,5 +84,3 @@ python3 .\main.py
 Abra o PostgreSQL e verifique se as tabelas `transactions` e `sales_per_category` foram criadas, e se seus dados foram recebidos.
 
 ---
-
-**Parabéns**!! Você acabou de concluir o seu pipeline de processamento de dados em tempo real usando a plataforma Flink no docker-compose!
